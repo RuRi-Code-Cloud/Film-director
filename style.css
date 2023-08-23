@@ -1,3 +1,61 @@
-h1 {
-  font-size: 90px;
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/tim-burton.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.84);
+  text-align: center;
+  padding: 200px 0px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header h3 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 60px;
+}
+header h1 {
+  line-height: 1.5;
+  margin: 0;
+  font-size: 130px;
+  font-family: "Henny Penny", cursive;
+  text-shadow: 5px 1px black;
+}
+
+header h2 {
+  font-size: 50px;
+  line-height: 1.5;
+  margin: 0;
+}
+header a {
+  background-color: rgba(255, 255, 255, 0.602);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  color: black;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 100px 0px;
+  }
+  header h1 {
+    font-size: 80px;
+    margin-top: 150px;
+  }
+  header h2 {
+    font-size: 30px;
+  }
 }
