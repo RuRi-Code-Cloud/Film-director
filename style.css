@@ -173,6 +173,12 @@ main p {
   width: 100%;
   aspect-ratio: 7/2;
 }
+.third {
+  text-align: center;
+}
+.third h2 {
+  padding-bottom: 50px;
+}
 @media (max-width: 900px) {
   header {
     padding: 100px 0px;
