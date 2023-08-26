@@ -212,4 +212,8 @@ main p {
     left: -4px;
     margin-top: 30px;
   }
+  .third iframe {
+    margin: 0 auto;
+    display: block;
+  }
 }
