@@ -15,11 +15,11 @@ header {
   padding: 200px 0px;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 section {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 50px;
 }
@@ -44,13 +44,15 @@ header h2 {
   line-height: 1.5;
   margin: 0;
 }
-header a {
+header a,
+main a {
   background-color: rgba(255, 255, 255, 0.602);
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
   margin-top: 20px;
   color: rgb(115, 0, 0);
+  border: 1px solid rgb(115, 0, 0);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.512);
 }
 .grid {
@@ -63,6 +65,10 @@ header a {
 }
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-even-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -109,15 +115,56 @@ main h2 {
   font-family: "Henny Penny", cursive;
   letter-spacing: 2px;
 }
+main img {
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0;
+  text-align: center;
+}
+.img-responsive {
+  width: 90%;
+  height: 40%;
+}
+.card {
+  border: 2px solid rgb(115, 0, 0);
+  padding: 20px 10px;
+}
 .quote {
   opacity: 0.5;
   font-family: "Raleway", sans-serif;
   font-size: 15px;
 }
-main img {
-  border: 2px solid rgb(0, 0, 0);
-  margin: 0;
+
+.secondary {
+  background-color: black;
+  color: white;
   text-align: center;
+}
+.fav-films {
+  padding: 20px;
+  font-size: 35px;
+}
+main h4 {
+  font-size: 25px;
+  color: rgb(115, 0, 0);
+}
+main h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(115, 0, 0);
+  margin: 0;
+}
+main p {
+  opacity: 0.8;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.burton {
+  text-decoration: underline rgb(115, 0, 0);
+  font-size: 20px;
+}
+.btn {
+  padding: 10px 90px;
 }
 @media (max-width: 900px) {
   header {
@@ -134,8 +181,7 @@ main img {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
-  section {
-  }
+
   main img {
     position: relative;
     left: 20px;
