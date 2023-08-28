@@ -1,7 +1,8 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: black;
-  margin: 0;
+  margin: 0 auto;
+  display: block;
   overflow-x: hidden;
 }
 
@@ -11,6 +12,8 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
+  display: block;
   color: rgba(255, 255, 255, 0.84);
   text-align: center;
   padding: 200px 0px;
@@ -180,6 +183,13 @@ main p {
 .third h2 {
   padding-bottom: 50px;
 }
+.information {
+  font-size: 25px;
+}
+main .grid-2-columns img {
+  margin: 0;
+  text-align: center;
+}
 @media (max-width: 900px) {
   body {
     overflow-x: hidden;
@@ -198,6 +208,7 @@ main p {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
+
   main img {
     position: relative;
     left: 20px;
